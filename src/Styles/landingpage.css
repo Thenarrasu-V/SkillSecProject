@@ -1,0 +1,240 @@
+body {
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f0f2f5;  /* Softer background color for contrast */
+  }
+  
+  .landing-page {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .hero {
+    background-color: #1c1f26;
+    color: white;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #1c1f26, #2c3e50);  /* Gradient for a modern look */
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;  /* Space between buttons */
+  }
+  
+  .hero-buttons button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .hero-buttons button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px); /* Subtle hover effect */
+  }
+  
+  .features {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .features-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between feature cards */
+  }
+  
+  .feature {
+    flex-basis: 45%;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* More defined shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature:hover {
+    transform: translateY(-10px); /* Lift on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  .feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .why-choose {
+    padding: 60px 20px;
+    background-color: #fff;
+  }
+  
+  .why-choose h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .testimonials {
+    background-color: #1c1f26;
+    color: white;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #1c1f26, #34495e);
+  }
+  
+  .testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .testimonials p {
+    font-size: 1.2rem;
+    font-style: italic;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .how-it-works {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .how-it-works h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;  /* Add space between steps */
+  }
+  
+  .step {
+    flex-basis: 45%;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .step:hover {
+    transform: translateY(-5px); /* Lift on hover */
+  }
+  
+  .cta {
+    padding: 60px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+  }
+  
+  .cta button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .cta button:hover {
+    background-color: #45a049;
+    color: white;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    color: #ddd;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .feature, .step {
+        flex-basis: 100%; /* Stack features and steps on smaller screens */
+    }
+  
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+  
+    .hero p {
+        font-size: 1rem;
+    }
+  
+    .features-grid, .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+  
+    .hero p {
+        font-size: 0.9rem;
+    }
+  
+    .cta button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+  }
