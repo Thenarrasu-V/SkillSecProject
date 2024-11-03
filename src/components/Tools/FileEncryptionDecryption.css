@@ -10,7 +10,7 @@ body {
 }
 
 /* Container for the whole page layout */
-.encryption-decryption-page {
+.file-encryption-decryption-page {
   display: flex;
   padding: 20px;
   background-color: #ffffff; /* White background for the content */
@@ -26,16 +26,16 @@ body {
   width: 250px; /* Set a fixed width or adjust as needed */
 }
 
-/* Main container for encryption and decryption sections */
-.encryption-decryption-container {
+/* Main container for file encryption and decryption sections */
+.file-encryption-decryption-container {
   display: flex;
   flex-direction: column;
   flex: 1; /* Take up remaining space */
 }
 
 /* Style for each individual section */
-.encryption-section,
-.decryption-section {
+.file-encryption-section,
+.file-decryption-section {
   background-color: #ffffff;
   border-radius: 8px;
   padding: 20px;
@@ -107,17 +107,9 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-/* Decrypted image styling */
-.decryption-section img {
-  margin-top: 15px;
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-}
-
 /* Responsive styling for mobile */
 @media (max-width: 768px) {
-  .encryption-decryption-page {
+  .file-encryption-decryption-page {
     flex-direction: column;
     align-items: center;
   }
@@ -126,30 +118,11 @@ input[type="checkbox"] {
     margin-bottom: 20px;
   }
 
-  .encryption-decryption-container {
+  .file-encryption-decryption-container {
     width: 100%;
   }
 }
 
-/* Style for the information section */
-.info-section {
-  background-color: #e9f5ff; /* Light blue background */
-  border-radius: 8px;
-  padding: 15px;
-  margin-bottom: 20px;
-}
-
-.info-section h2 {
-  font-family: 'Lora', serif; /* Heading font */
-  color: #000407; /* Primary color for the heading */
-  margin-bottom: 10px;
-}
-
-.info-section p {
-  color: #555; /* Dark gray for the text */
-  font-size: 16px;
-  line-height: 1.5; /* Improved readability */
-}
 /* Style for the information section */
 .info-section {
   background-color: #ebf9ee; /* Light green background */
@@ -169,42 +142,20 @@ input[type="checkbox"] {
   font-size: 16px;
   line-height: 1.5; /* Improved readability */
 }
-/* Importing Google Fonts in CSS file */
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;500&display=swap');
-
-/* Style for the information section */
-.info-section {
-  background-color: #eeefee; /* Light green background */
-  border-radius: 8px;
-  padding: 15px;
-  margin-bottom: 20px;
-}
-
-.info-section h2 {
-  font-family: 'Lora', serif; /* Heading font */
-  color: #000407; /* Primary color for the heading */
-  margin-bottom: 10px;
-}
-
-.info-section p {
-  color: #555; /* Dark gray for the text */
-  font-size: 16px;
-  line-height: 1.5; /* Improved readability */
-}
 .footer {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-.footer-links {
-  margin-top: 10px;
-}
-
-.footer-links a {
-  color: #ddd;
-  margin: 0 15px;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    color: #ddd;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }

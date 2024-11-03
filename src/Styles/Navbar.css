@@ -1,0 +1,111 @@
+/* Navbar */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;500&display=swap');
+.navbar {
+    width: 100vw; /* Full viewport width */
+    display: flex;
+    justify-content: space-around;
+    background-color: #1c1f26;
+    padding: 15px 0; /* Remove horizontal padding */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin: 0; /* Ensure no margin on the navbar */
+}
+
+/* Navbar Links */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.navbar-links li a:hover {
+    color: #4CAF50;
+}
+
+/* Ensure the body has no horizontal padding or margin */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent any horizontal overflow */
+}
+/* Reset margins and paddings for html, body, and parent containers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    background-color: #1c1f26;
+    padding: 25px 0; /* Increase padding for a taller navbar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    padding-top: 120px; /* Move content down to create space below navbar */
+    text-align: center;
+}
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem; /* Increase size for visibility */
+    padding: 30px 0; /* Increase height of the navbar */
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    background-color: #1c1f26;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-links li a {
+    font-size: 1.1rem;
+}
+/* Navbar */
+.navbar {
+    width: 100vw;
+    display: flex;
+    align-items: center; /* Center-aligns items vertically */
+    justify-content: space-between; /* Space items evenly across navbar */
+    background-color: #1c1f26;
+    padding: 25px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    margin-left: 20px; /* Adjusts logo position on the left */
+}
+
+.logo-image {
+    height: 50px; /* Sets logo height */
+    width: auto; /* Maintains aspect ratio */
+}
+
+/* Navbar Links */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}

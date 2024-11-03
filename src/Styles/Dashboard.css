@@ -1,0 +1,107 @@
+/* Apply Google Font */
+body {
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ffffff; /* Background color set to white */
+    color: #000000; /* Default text color set to black */
+}
+
+.dash-dashboard {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.dash-hero1 {
+    background-color: #ffffff; /* Hero section background set to white */
+    color: #000000; /* Hero section text color set to black */
+    padding: 100px 30px; /* Enhanced padding for the hero section */
+}
+
+.dash-hero-title {
+    font-size: 3rem; /* Increased font size for the title */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.dash-hero-text {
+    font-size: 1.2rem; /* Larger font size for better readability */
+    margin: 15px 0; /* Adjusted margin for spacing */
+    max-width: 900px; /* Increased maximum width for text layout */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dash-resources {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px 0; /* Adjusted margin for spacing */
+}
+
+.dash-resource-card {
+    flex-basis: 23%; /* Width of each resource card */
+    background-color: white; /* Background of resource card set to white */
+    padding: 25px; /* Enhanced padding for resource card */
+    border-radius: 12px; /* More rounded corners for resource card */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition effects */
+    margin: 15px; /* Margin between cards */
+    color: #000000; /* Text color inside resource cards set to black */
+}
+
+.dash-resource-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.dash-resource-card h3 {
+    font-size: 1.6rem; /* Increased font size for resource card titles */
+    margin-bottom: 12px;
+    color: #000000; /* Title color set to black */
+    font-weight: 600;
+}
+
+.dash-resource-card p {
+    font-size: 1rem; /* Increased font size for resource card text */
+    color: #000000; /* Text color set to black */
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+    .dash-resource-card {
+        flex-basis: 100%; /* Stack resource cards on smaller screens */
+        margin-bottom: 20px; /* Bottom margin for spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .dash-hero-title {
+        font-size: 2.5rem; /* Adjusted font size for smaller screens */
+    }
+
+    .dash-hero-text {
+        font-size: 1rem; /* Adjusted font size for smaller screens */
+    }
+}
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    color: #ddd;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }

@@ -65,7 +65,7 @@ const LandingPage = () => {
 
       {/* Testimonials Section */}
       <section className="testimonials">
-        <h2>Testimonials</h2>
+        <h2 className='test'>Testimonials</h2>
         <p>“SkillSec made cybersecurity learning fun and engaging! The encryption exercises were especially helpful.” — John Doe</p>
       </section>
 
