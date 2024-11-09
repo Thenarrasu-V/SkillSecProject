@@ -10,6 +10,7 @@ import EncryptFileOnline from './components/Tools/FileEncryptionDecryption';
 import Bcrypt from './components/Tools/BcryptTool';
 import OtherTools from './components/Tools/OtherTools';
 import TripleDES from './components/Tools/TripleDES'; // Import the TripleDES component
+import MessagePage from './components/Messages/Messagepage';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/FileEn" element={<EncryptFileOnline />} />
         <Route path="/bcrypt" element={<Bcrypt />} />
         <Route path="/triple-des" element={<TripleDES />} /> {/* Added the TripleDES route */}
+        <Route path="/messages" element={<MessagePage />} />
       </Routes>
     </Router>
   );
