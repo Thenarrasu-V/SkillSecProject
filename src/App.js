@@ -9,8 +9,14 @@ import EncryptImageOnline from './components/Tools/EncryptImageOnline';
 import EncryptFileOnline from './components/Tools/FileEncryptionDecryption';
 import Bcrypt from './components/Tools/BcryptTool';
 import OtherTools from './components/Tools/OtherTools';
-import TripleDES from './components/Tools/TripleDES'; // Import the TripleDES component
-import MessagePage from './components/Messages/Messagepage';
+import TripleDES from './components/Tools/TripleDES'; 
+import BlogLandingPage from './components/Blogs/BlogLandingPage';
+import PostBlogPage from './components/Blogs/PostBlogPage';
+import BlogPage from './components/Blogs/BlogPage';
+import { BlogProvider } from './components/Blogs/BlogContext';
+import './components/Blogs/styles.css';
+import BlogDetailPage from './components/Blogs/BlogDetailPage';
+
 
 function App() {
   return (
@@ -26,8 +32,15 @@ function App() {
         <Route path="/FileEn" element={<EncryptFileOnline />} />
         <Route path="/bcrypt" element={<Bcrypt />} />
         <Route path="/triple-des" element={<TripleDES />} /> {/* Added the TripleDES route */}
-        <Route path="/messages" element={<MessagePage />} />
       </Routes>
+        <BlogProvider>
+          <Routes>
+        <Route path="/bloglan" element={<BlogLandingPage />} />
+        <Route path="/post-blog" element={<PostBlogPage />} />
+        <Route path="/blog/:id" element={<BlogDetailPage />} />
+        <Route path="/blogs/:id" element={<BlogPage />} />
+        </Routes>
+        </BlogProvider>
     </Router>
   );
 }

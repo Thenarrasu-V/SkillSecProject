@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios'; // Import Axios
 import '../../Styles/SignUp.css'; // CSS for SignUp page
 
 const SignUp = () => {
@@ -11,14 +12,41 @@ const SignUp = () => {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
 
-  const handleSignUp = (e) => {
+  const handleSignUp = async (e) => {
     e.preventDefault();
+    
+    // Check if passwords match
     if (password !== confirmPassword) {
       setError('Passwords do not match');
-    } else {
-      // Simulate sign-up logic
-      console.log('Sign up successful');
-      navigate('/dashboard');
+      return;
+    }
+
+    // Prepare user data to be sent to the backend
+    const userData = {
+      userName: username,
+      name: name,
+      pass: password,
+      email: email,
+    };
+    
+    try {
+      // Send POST request to backend API
+      const response = await axios.post('http://localhost:8080/api/user/sign-up', userData);
+      console.log(response.data);
+      console.log(response.status);
+      
+      // Handle success
+      if (response.data === "success") {
+        alert('Sign up successful');
+        navigate('/dashboard'); // Redirect to the dashboard on success
+      }
+      else{
+
+      }
+    } catch (err) {
+      // Handle error
+      console.error('Error during sign-up:', err);
+      setError('An error occurred during sign-up. Please try again.');
     }
   };
 

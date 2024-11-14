@@ -1,19 +1,51 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios'; // Import Axios
 import '../../Styles/SignIn.css';
 
 const SignIn = () => {
   const navigate = useNavigate();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [name, setName] = useState(''); // Changed from email to name
+  const [pass, setPass] = useState(''); // Changed from password to pass
   const [error, setError] = useState('');
 
-  const handleSignIn = (e) => {
+  const handleSignIn = async (e) => {
     e.preventDefault();
-    if (email === 'user@skillsec.com' && password === 'password123') {
-      navigate('/dashboard');
-    } else {
-      setError('Invalid email or password');
+
+    // Prepare login data
+    const loginData = {
+      name: name,
+      pass: pass,
+    };
+
+    try {
+      // Send POST request to login endpoint
+      const response = await axios.post('http://localhost:8080/api/user/sign-in', loginData);
+
+      // Check if login is successful
+      if (response.data !== null) {
+        const userDetails = response.data; // Assuming the response contains user details
+        
+        // Store user details in localStorage
+        localStorage.setItem('user', JSON.stringify(userDetails));
+
+        // Optionally, set the user state in your app context or component (if needed)
+        // setUser({ username: userDetails.userName, role, userDetails });
+
+        // Set success message (if you have a snackbar or similar UI element)
+        // setSnackbarMessage('Sign In Successful!');
+        // setOpenSnackbar(true);
+
+        // Redirect to dashboard
+        navigate('/dashboard');
+      } else {
+        console.log("Login failed. User details are null.");
+        setError('Invalid username or password');
+      }
+    } catch (err) {
+      // Handle login error
+      console.error('Login error:', err);
+      setError('Invalid username or password');
     }
   };
 
@@ -24,12 +56,12 @@ const SignIn = () => {
           <h2>Sign In to SkillSec</h2>
           <form onSubmit={handleSignIn}>
             <div className="input-group">
-              <label>Email or Username</label>
+              <label>Username</label>
               <input
                 type="text"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email or username"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="Enter your username"
                 required
               />
             </div>
@@ -38,8 +70,8 @@ const SignIn = () => {
               <label>Password</label>
               <input
                 type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                value={pass}
+                onChange={(e) => setPass(e.target.value)}
                 placeholder="Enter your password"
                 required
               />
