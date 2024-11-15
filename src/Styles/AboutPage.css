@@ -1,0 +1,186 @@
+/* Overall layout */
+.about-page {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Hero Section */
+  .hero-about {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .hero-content-about h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content-about p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+  
+  .hero-content-about button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-content-about button:hover {
+    background-color: #21a1f1;
+  }
+  
+  /* Mission Statement */
+  .mission-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+  }
+  
+  .mission-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .mission-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
+  /* Vision and Values */
+  .vision-values-section {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .vision-values-section h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .vision-values-section ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .vision-values-section ul li {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+  
+  .vision-values-section ul li strong {
+    color: #61dafb;
+  }
+  
+  /* Our Story Section */
+  .our-story-section {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .our-story-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .our-story-section p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  /* Team Section */
+  .team-section {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .team-section h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .team-member {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 250px;
+  }
+  
+  .team-member h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .team-member p {
+    font-size: 1.1em;
+    color: #666;
+  }
+  
+  /* Call to Action */
+  .cta-about {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #282c34;
+    color: white;
+  }
+  
+  .cta-about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .cta-about button {
+    padding: 12px 24px;
+    font-size: 1.2em;
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-about button:hover {
+    background-color: #21a1f1;
+  }
+  
+  /* Footer */
+  .about-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }

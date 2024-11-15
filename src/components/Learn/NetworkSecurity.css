@@ -1,0 +1,158 @@
+/* Common Styles for Introduction Section */
+.introduction {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .intro-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2C3E50;
+  }
+  
+  .intro-text {
+    font-size: 1.25rem;
+    color: #34495E;
+  }
+  
+  /* Existing Styles */
+  .container {
+    max-width: 1200px;
+    background-color: #F0F9F0;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2C3E50;
+  }
+  
+  .subtitle {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #34495E;
+    margin-bottom: 2rem;
+  }
+  
+  .content-box {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2C3E50;
+    margin-bottom: 1rem;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .list-item {
+    font-size: 1.1rem;
+    color: #34495E;
+    margin-bottom: 0.5rem;
+  }
+  
+  .progress-title {
+    font-size: 1.25rem;
+    color: #2C3E50;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    margin-bottom: 1rem;
+  }
+  
+  .progress {
+    height: 20px;
+    background-color: #45a049;
+    width: 0;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .button.primary {
+    background-color: #2C3E50;
+  }
+  
+  .button.secondary {
+    background-color: #16A085;
+  }
+  
+  .dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .dialog-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .dialog-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .dialog-actions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    color: #ddd;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }

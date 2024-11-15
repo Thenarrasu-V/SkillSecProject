@@ -1,0 +1,177 @@
+/* Import Google Font in the head of the HTML document for consistency */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Apply Poppins font to the entire document */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F9FAFB;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container styling */
+.container {
+  background-color: #ffffff;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  margin-top: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 3rem auto;
+}
+
+/* Heading Styling */
+.heading {
+  font-weight: 600;
+  color: #2C3E50;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.subheading {
+  color: #34495E;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Content box with padding and shadow */
+.content-box {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.content-title {
+  font-weight: 600;
+  color: #2C3E50;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.list-title {
+  font-weight: 600;
+  color: #34495E;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Button styling */
+.button-container {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.button-container .btn-primary {
+  background-color: #4CAF50;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-right: 1.5rem;
+  border: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.button-container .btn-primary:hover {
+  background-color: #45a049;
+}
+
+.button-container .btn-secondary {
+  background-color: #E74C3C;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container .btn-secondary:hover {
+  background-color: #c0392b;
+}
+
+/* Dialog box styling */
+.dialog-title {
+  font-weight: 600;
+  color: #34495E;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.dialog-content .congratulations {
+  font-weight: 600;
+  color: #2C3E50;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.dialog-content .message {
+  color: #34495E;
+  font-size: 1rem;
+}
+
+.dialog-actions {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.dialog-actions .btn-primary {
+  background-color: #4CAF50;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.dialog-actions .btn-primary:hover {
+  background-color: #45a049;
+}
+
+.dialog-actions .btn-close {
+  background-color: #E74C3C;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.dialog-actions .btn-close:hover {
+  background-color: #c0392b;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #ddd;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}

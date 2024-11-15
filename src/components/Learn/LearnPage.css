@@ -1,0 +1,208 @@
+/* General Layout */
+.learn-page {
+    background-color: #f0f9f0;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease-in-out; /* Smooth background transition */
+}
+
+.learn-page:hover {
+    background-color: #e0f7e0; /* Subtle change on hover */
+}
+
+/* Header Styling */
+.learn-page-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.learn-page-header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.learn-page-header h1:hover {
+    color: #4caf50; /* Change color on hover */
+}
+
+.learn-page-header p {
+    font-size: 1rem;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+}
+
+.learn-page-header p:hover {
+    color: #4caf50; /* Change color on hover */
+}
+
+/* Course Grid Styling */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transform and shadow */
+}
+
+.course-card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add stronger shadow */
+}
+
+.course-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.course-card button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.course-card button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Slightly grow the button on hover */
+}
+
+/* Quiz Section */
+.quiz-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.quiz-section button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.quiz-section button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Slightly grow the button on hover */
+}
+
+/* Subscribe Section */
+.subscribe-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.subscribe-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.subscribe-section h2:hover {
+    color: #4caf50; /* Change color on hover */
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.subscribe-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+    transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+.subscribe-form input:focus {
+    border-color: #4caf50; /* Change border color on focus */
+}
+
+.subscribe-form button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.subscribe-form button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Slightly grow the button on hover */
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #4caf50;
+    border-radius: 4px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    color: #ddd;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #fff;
+  }
+  
+
+.navbar-container {
+    margin-bottom: 20px; /* Ensure spacing between navbar and main content */
+}

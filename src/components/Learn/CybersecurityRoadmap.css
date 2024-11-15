@@ -1,0 +1,95 @@
+/* CybersecurityRoadmap.css */
+.container {
+    background-color: #f4f6f8;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .subtitle {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .back-button {
+    background-color: #1976d2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .back-button:hover {
+    background-color: #1565c0;
+  }
+  
+  .timeline {
+    margin-top: 20px;
+  }
+  
+  .timeline-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+  }
+  
+  .timeline-separator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .timeline-dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1976d2; /* Primary color */
+  }
+  
+  .timeline-connector {
+    width: 2px;
+    height: 40px;
+    background-color: #1976d2; /* Primary color */
+    margin-top: 8px;
+  }
+  
+  .timeline-content {
+    flex: 1;
+    padding-left: 16px;
+  }
+  
+  .timeline-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+  }
+  
+  .timeline-title {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .timeline-description {
+    color: #757575;
+  }
+  

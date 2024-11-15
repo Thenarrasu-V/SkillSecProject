@@ -1,0 +1,85 @@
+.container {
+    background-color: #F0F9F0;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+  
+  .heading {
+    font-weight: bold;
+    color: #2C3E50;
+  }
+  
+  .subheading {
+    color: #34495E;
+  }
+  
+  .content-box {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-title {
+    font-weight: bold;
+    color: #2C3E50;
+  }
+  
+  .content-subtitle {
+    font-weight: bold;
+    color: #34495E;
+  }
+  
+  .content-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  .progress-title {
+    font-weight: bold;
+    color: #34495E;
+  }
+  
+  .button-primary {
+    background-color: #4CAF50;
+    color: #ffffff;
+    margin-right: 1rem;
+  }
+  
+  .button-secondary {
+    background-color: #E74C3C;
+    color: #ffffff;
+  }
+  
+  .certificate-button {
+    background-color: #4CAF50;
+    color: #ffffff;
+  }
+  
+  .dialog-title {
+    font-weight: bold;
+    color: #2C3E50;
+  }
+  
+  .dialog-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    color: #ddd;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }

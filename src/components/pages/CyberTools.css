@@ -1,0 +1,152 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  color: #333;
+}
+
+/* Main Page Styling */
+.cybertools-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+  max-width: 1200px; /* Ensures content doesn't stretch too wide */
+  margin-left: 220px; /* To prevent overlap with the left-side navbar */
+  padding: 20px;
+}
+
+.cybertools-main-title {
+  text-align: center;
+  font-size: 2.5em;
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cybertools-main-description {
+  text-align: center;
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Tool Cards */
+.cybertools-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center tool cards */
+  gap: 30px;
+}
+
+.cybertools-tool {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+
+.cybertools-tool:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.cybertools-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 3px solid #ddd;
+}
+
+.cybertools-details {
+  padding: 20px;
+  text-align: left;
+}
+
+.cybertools-title {
+  font-size: 1.6em;
+  color: #333;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.cybertools-description {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Download Button */
+.cybertools-explore {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #0073e6;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.cybertools-explore:hover {
+  background-color: #005bb5;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  width: 100%; /* Ensures footer spans the full width */
+  box-sizing: border-box;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensures links wrap on smaller screens */
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.footer-links a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #0073e6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cybertools-main-title {
+    font-size: 2em;
+  }
+
+  .cybertools-main-description {
+    font-size: 1em;
+  }
+
+  .cybertools-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cybertools-tool {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+

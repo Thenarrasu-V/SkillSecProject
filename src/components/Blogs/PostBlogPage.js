@@ -13,7 +13,7 @@ const PostBlogPage = () => {
   // Retrieve the user details from localStorage
   const user = JSON.parse(localStorage.getItem('user'));
   const userName = user ? user.userName : 'Anonymous'; // Default to 'Anonymous' if no user is found
-  const userId = user ? user.userId : 'Anonymous'; // Default to 'Anonymous' if no user is found
+  const userId = user ? user.id : 'Anonymous'; // Default to 'Anonymous' if no user is found
 
   const handleSubmit = async (e) => {
     e.preventDefault();

@@ -1,148 +1,208 @@
-/* src/Styles/MessagePage.css */
-
-.message-page {
+/* General Body and Layout */
+.mes-dashboard {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #f3f2ef;
-    font-family: 'Jost', sans-serif;
+    padding: 20px;
 }
 
-.dash-hero1 {
+.mes-hero1 {
     background-color: #ffffff;
-    color: #000000;
-    padding: 60px 30px;
-    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    flex: 1;
 }
 
-.dash-hero-title {
-    font-size: 3rem;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: 600;
-}
-
-.dash-hero-text {
-    font-size: 1.2rem;
+.mes-hero-content {
     max-width: 800px;
     margin: 0 auto;
-    line-height: 1.6;
-}
-
-.message-page-content {
-    display: flex;
-    height: calc(100vh - 200px); /* Adjust for hero section and footer */
-}
-
-.sidebar {
-    width: 30%;
-    border-right: 1px solid #ddd;
-    background-color: #fff;
-    padding: 15px;
-}
-
-.search-bar {
-    width: 100%;
     padding: 10px;
+}
+
+.mes-hero-title {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+.mes-hero-text {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Message List Styling */
+.mes-message-list {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.mes-message {
     margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.conversations {
-    overflow-y: auto;
-    height: 100%;
-}
-
-.conversation {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    cursor: pointer;
-}
-
-.conversation.active {
-    background-color: #e1f5fe;
-}
-
-.chat-area {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-}
-
-.chat-header {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+    padding: 12px;
     background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    max-width: 70%;
 }
 
-.messages {
-    flex-grow: 1;
-    padding: 10px;
-    overflow-y: auto;
-    background-color: #f7f7f7;
+/* Left aligned messages */
+.mes-message.left {
+    text-align: left;
+    background-color: #f1f1f1;
 }
 
-.message {
-    padding: 8px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    background-color: #e1f5fe;
+/* Right aligned messages (for user messages) */
+.mes-message.right {
+    text-align: right;
+    background-color: #e3f2fd; /* Light blue background for the user message */
+    margin-left: auto;
+}
+
+/* Ensure proper alignment and colors */
+.mes-message.left,
+.mes-message.right {
+    max-width: 70%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Message Input Section */
+.mes-message-input {
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
 }
 
-.message-input {
-    display: flex;
-    padding: 10px;
-    border-top: 1px solid #ddd;
-    background-color: #fff;
+.mes-message-input input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
 }
 
-.message-input input {
-    flex-grow: 1;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-right: 5px;
-}
-
-.message-input button {
-    padding: 8px 12px;
-    background-color: #0073b1;
-    color: white;
+.mes-message-input button {
+    padding: 12px 20px;
+    background-color: #ffca28;
+    color: #000;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
-.footer {
+.mes-message-input button:hover {
+    background-color: #fbc02d; /* Darker shade of yellow */
+}
+
+/* Footer Styling */
+.mes-footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0;
     background-color: #333;
     color: white;
-    padding: 20px;
-    text-align: center;
 }
 
-.footer-links {
+.mes-footer-links {
     margin-top: 10px;
 }
 
-.footer-links a {
-    color: #ddd;
-    margin: 0 15px;
+.mes-footer-links a {
+    color: #ffca28;
     text-decoration: none;
-    transition: color 0.3s ease;
+    margin: 0 15px;
+    font-size: 14px;
 }
 
-.footer-links a:hover {
-    color: #fff;
+.mes-footer-links a:hover {
+    text-decoration: underline;
 }
-.conversation.unread {
-    font-weight: bold;
-  }
-  
-  .unread-indicator {
-    color: #2E86DE;
-    font-size: 1.5em;
-    margin-left: 5px;
-  }
+
+/* Scrollbar Styling */
+.mes-message-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.mes-message-list::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.mes-message-list::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.mes-message-list::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+}
+
+/* Message Container */
+.message-list {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Individual Message */
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* User's Message (Right-aligned) */
+.user-message {
+    text-align: right;
+    background-color: #e3f2fd; /* Light blue background for user messages */
+}
+
+/* Other Messages (Left-aligned) */
+.other-message {
+    text-align: left;
+    background-color: #fff; /* White background for other messages */
+}
+
+/* Input and Button Styling */
+.mes-message-input {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.mes-message-input input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.mes-message-input button {
+    padding: 10px 20px;
+    background-color: #ffca28;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
